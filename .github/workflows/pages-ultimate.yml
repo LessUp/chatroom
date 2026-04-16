@@ -86,7 +86,7 @@ jobs:
       should_skip: ${{ steps.skip.outputs.should_skip }}
     steps:
       - name: 📥 Deep Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           fetch-tags: true
@@ -170,7 +170,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 🚀 Setup pnpm
         uses: pnpm/action-setup@v3
@@ -250,7 +250,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           sparse-checkout: |
             docs
